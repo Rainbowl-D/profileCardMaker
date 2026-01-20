@@ -795,10 +795,10 @@ body.modal-open {
   .card-area{
     display: block;
     overflow-x: scroll;
-    padding: 0;
+    padding:0;
   }
-  #cardArea.folded .card{
-    transform: scale(0.9);
+  #cardArea.folded{
+    padding: 30px 20px 0;
   }
   .card-area::after{
     content: "← 좌우로 움직여서 확인하세요. →";
@@ -823,7 +823,7 @@ body.modal-open {
     transform: translateX(0) translateY(42px);
   }
   #editorPanel.folded{
-    transform: translateX(0) translateY(600px);
+    transform: translateX(0) translateY(650px);
   }
 
   .input-row {
