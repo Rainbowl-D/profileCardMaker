@@ -178,7 +178,7 @@ ul,li{list-style: none; margin: 0; padding: 0;}
   width: 100%;
   height: 100%;
   background-size: cover;
-  background-position: top center;
+  background-position:top center;
 }
 
 .card-right {
@@ -203,6 +203,9 @@ ul,li{list-style: none; margin: 0; padding: 0;}
     padding-right: 10px;
     padding-left: 20px;
 }
+.info-row{
+  padding-left: 8px;
+}
 
 .info-row + .info-row{
   margin-top: 10px;
@@ -216,11 +219,13 @@ ul,li{list-style: none; margin: 0; padding: 0;}
   border-left: 3px solid var(--stat-color);
   font-size: 15px;
   font-weight: 700;
+  margin-left: -8px;
 }
 
 .info-row span{
   font-size: 13px;
   font-weight: 500;
+  word-break: keep-all;
 }
 
 #infoContainer02{
@@ -231,6 +236,16 @@ ul,li{list-style: none; margin: 0; padding: 0;}
   padding-left: 20px;
   margin-top: 20px;
   border-top: 1px solid var(--stat-color);
+}
+.preset-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.preset-buttons > button{
+  display: block;
+  max-width: calc((100% / 4) - 4px);
+  line-height: 12px;
 }
 
 .tags-wrapper{
@@ -867,5 +882,4 @@ body.modal-open {
   h1 {
     font-size: 1.2rem;
   }
-
 }

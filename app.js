@@ -170,6 +170,42 @@ const DEFAULT_PRESETS = {
                 ],
       etc: '기타'
     }
+  },
+  blog: {
+    state: {
+      titles: { main: '닉네임', progress: '작성 빈도', mood: 'IMG BOARD', stats: '이웃교류', goodBad: '관심 글감', etc: '기타',fileName:'블로그 소개카드' },
+      infoRows: [
+        { id: genId(), label: '닉네임', value: '', isTag: false },
+        { id: genId(), label: '블로그 제목', value: '', isTag: false },
+        { id: genId(), label: '블로그 성격', value: '일상,정보,리뷰,여행,맛집,1차,2차,그림,글', isTag: true },
+        { id: genId(), label: '이웃신청', value: '기본멘트 안받습니다. / 서로이웃X 이웃O / 서로이웃 찾아갑니다.', isTag: false }
+      ],
+      radar: { enabled: true, labels: ['안부게시판','댓글','좋아요','퍼가기','방문'], values: [3, 4, 2, 5, 1] },
+      progress: { enabled: true, rows: [
+                                        { id: genId(), label: '일상', value: 80 },
+                                        { id: genId(), label: '리뷰', value: 50 },
+                                        { id: genId(), label: '그림', value: 50 },
+                                        { id: genId(), label: '뻘글', value: 50 },
+                                        { id: genId(), label: '블로그 챌린지', value: 50 }
+                                      ] },
+      infoRows02: [
+                    { id: genId(), label: '게시글 업로드 빈도', value: '아주가끔,가끔,달에 1번,주에 1번,일에 1번,비정기적', isTag: true },
+                    { id: genId(), label: '접속 환경', value: 'PC,모바일웹,블로그앱', isTag: true }
+                  ],
+      checkList: [
+                  { id: genId(), label: '일상', checked: true }, 
+                  { id: genId(), label: '여행', checked: false },
+                  { id: genId(), label: '맛집', checked: false },
+                  { id: genId(), label: '그림', checked: false },
+                  { id: genId(), label: '게임', checked: false },
+                  { id: genId(), label: '독서', checked: false },
+                  { id: genId(), label: '영화', checked: false },
+                  { id: genId(), label: '정보', checked: false },
+                  { id: genId(), label: '기술', checked: false },
+                  { id: genId(), label: '기타', checked: false }
+                ],
+      etc: '기타'
+    }
   }
 };
 
