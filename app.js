@@ -206,6 +206,41 @@ const DEFAULT_PRESETS = {
                 ],
       etc: '기타'
     }
+  },
+  drawing: {
+    state: {
+      titles: { main: '닉네임', progress: '그림 성향', mood: 'MY ART', stats: '경험치', goodBad: '작업환경', etc: '기타',fileName:'그림러 소개카드' },
+      infoRows: [
+        { id: genId(), label: '닉네임 / ID', value: '', isTag: false },
+        { id: genId(), label: '사용 SNS', value: '트위터(X),인스타그램,블루스카이,샤오홍슈,블로그,아트스테이션,CARA', isTag: true },
+        { id: genId(), label: '커미션', value: '받지않음,크레페,아트머그,DM,오픈카톡,포스타입,픽시브리퀘스트,스케브,VGEN', isTag: true }
+      ],
+      radar: { enabled: true, labels: ['일러스트','LD','디자인','스탠딩','SD'], values: [3, 4, 2, 5, 1] },
+      progress: { enabled: true, rows: [
+                                        { id: genId(), label: '유테', value: 80 },
+                                        { id: genId(), label: '등신비', value: 50 },
+                                        { id: genId(), label: '실사도', value: 50 },
+                                        { id: genId(), label: '채도', value: 50 },
+                                        { id: genId(), label: '밸류(톤)', value: 50 }
+                                      ] },
+      infoRows02: [
+                    { id: genId(), label: '업로드 성향', value: '낙서,스터디,모작,그림팁,개인작,커미션,외주', isTag: true },
+                    { id: genId(), label: '주 연성 장르', value: '1차,2차,OC,일러스트,스탠딩,디자인', isTag: true }
+                  ],
+      checkList: [
+                  { id: genId(), label: '포토샵', checked: true }, 
+                  { id: genId(), label: '클튜', checked: false },
+                  { id: genId(), label: '메디방', checked: false },
+                  { id: genId(), label: '프크', checked: false },
+                  { id: genId(), label: '블렌더', checked: false },
+                  { id: genId(), label: '판타', checked: false },
+                  { id: genId(), label: '액타', checked: false },
+                  { id: genId(), label: '모바일', checked: false },
+                  { id: genId(), label: '아패', checked: false },
+                  { id: genId(), label: '연필', checked: false },
+                ],
+      etc: '기타'
+    }
   }
 };
 
